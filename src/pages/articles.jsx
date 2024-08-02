@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+
 import Article from "../components/articles/article";
+import BlurFade from "../components/common/blur-fade";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -33,43 +34,46 @@ const Articles = () => {
 			<div className="page-content">
 				<NavBar active="articles" />
 				<div className="content-wrapper">
-					<div className="articles-logo-container">
-						<div className="articles-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-
 					<div className="articles-main-container">
-						<div className="title articles-title">
-							{INFO.articles.title}
-						</div>
+						<BlurFade inView duration={0.25}>
+							<div className="title articles-title">
+								{INFO.articles.title}
+							</div>
+						</BlurFade>
 
 						<div className="subtitle articles-subtitle">
-							{INFO.articles.description}
+							<BlurFade inView duration={0.25 * 2}>
+								{INFO.articles.description}
+							</BlurFade>
 						</div>
-
-						<div className="articles-container">
-							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
-									<div
-										className="articles-article"
-										key={(index + 1).toString()}
-									>
-										<Article
+						<BlurFade inView duration={0.25 * 3}>
+							<div className="articles-container">
+								<div className="articles-wrapper">
+									{myArticles.map((article, index) => (
+										<div
+											className="articles-article"
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
+										>
+											<Article
+												key={(index + 1).toString()}
+												date={article().date}
+												title={article().title}
+												description={
+													article().description
+												}
+												link={"/article/" + (index + 1)}
+											/>
+										</div>
+									))}
+								</div>
 							</div>
+						</BlurFade>
+					</div>
+					<BlurFade inView duration={0.25}>
+						<div className="page-footer">
+							<Footer />
 						</div>
-					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+					</BlurFade>
 				</div>
 			</div>
 		</React.Fragment>

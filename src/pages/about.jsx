@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+
 import Socials from "../components/about/socials";
 import BlurFade from "../components/common/blur-fade";
 
@@ -33,38 +33,35 @@ const About = () => {
 			<div className="page-content">
 				<NavBar active="about" />
 				<div className="content-wrapper">
-					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									<BlurFade delay={0.25} inView>{INFO.about.title}</BlurFade>
+									<BlurFade delay={0.25} inView>
+										{INFO.about.title}
+									</BlurFade>
 								</div>
 
 								<div className="subtitle about-subtitle">
-								<BlurFade delay={0.25*2} inView>{INFO.about.description}</BlurFade>
+									<BlurFade delay={0.25 * 2} inView>
+										{INFO.about.description}
+									</BlurFade>
 								</div>
-								
-								
-									<div className="skill">
-										<div className="skill-name">
-											Programming
-										</div>
-										<div className="skill-bar">
-											<div
-												className="skill-per"
-												style={{ maxWidth: "90%" }}
-												per="90%"
-											></div>
-										</div>
+
+								<div className="skill">
+									<div className="skill-name">
+										Programming
 									</div>
-									
-									<div className="skill">
+									<div className="skill-bar">
+										<div
+											className="skill-per"
+											style={{ maxWidth: "90%" }}
+											per="90%"
+										></div>
+									</div>
+								</div>
+
+								<div className="skill">
 									<div className="skill-name">WebDev</div>
 									<div className="skill-bar">
 										<div
@@ -73,7 +70,7 @@ const About = () => {
 											per="60%"
 										></div>
 									</div>
-									</div>
+								</div>
 								<div className="skill">
 									<div className="skill-name">AI/ML</div>
 									<div className="skill-bar">
@@ -94,31 +91,34 @@ const About = () => {
 										></div>
 									</div>
 								</div>
-								
 							</div>
-							
+
 							<div className="about-left-side">
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
-									<BlurFade delay={0.25} inView><img
-											src="./about.jpg"
-											alt="./about.jpg"
-											className="about-image"
-										/>
+										<BlurFade delay={0.25} inView>
+											<img
+												src="./about.jpg"
+												alt="./about.jpg"
+												className="about-image"
+											/>
 										</BlurFade>
 									</div>
 								</div>
 
-								<BlurFade delay={0.25*3} inView><div className="about-socials">
-									<Socials />
-								</div></BlurFade>
+								<BlurFade delay={0.25 * 3} inView>
+									<div className="about-socials">
+										<Socials />
+									</div>
+								</BlurFade>
 							</div>
 						</div>
 					</div>
-<BlurFade delay={0.25} inView>
-					<div className="page-footer">
-						<Footer />
-					</div></BlurFade>
+					<BlurFade delay={0.25} inView>
+						<div className="page-footer">
+							<Footer />
+						</div>
+					</BlurFade>
 				</div>
 			</div>
 		</React.Fragment>

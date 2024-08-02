@@ -27,7 +27,7 @@ const INFO = {
 	},
 
 	articles: {
-		title: "I’m all about documenting my progress.",
+		title: "<I’m all about documenting my progress./>",
 		description:
 			"This is my space to share the cool stuff I've been up to, from big wins to interesting experiences along the way. It's a laid-back chronicle of my achievements and some tech deep dives that I find exciting.",
 	},

@@ -15,7 +15,6 @@ import NavBar from "../components/common/navBar";
 import AllProjects from "../components/projects/allProjects";
 import BlurFade from "../components/common/blur-fade";
 
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -76,103 +75,106 @@ const Homepage = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
-
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
-						<Logo width={logoSize} link={false} />
+							<Logo width={logoSize} link={false} />
 						</div>
 					</div>
 
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								
-									<div className="title homepage-title">
-									<BlurFade delay={0.25} inView>{INFO.homepage.title}</BlurFade>
-									</div>
+								<div className="title homepage-title">
+									<BlurFade delay={0.25} inView>
+										{INFO.homepage.title}
+									</BlurFade>
+								</div>
 
-									<div className="subtitle homepage-subtitle">
-									<BlurFade delay={0.25*2} inView>{INFO.homepage.description}</BlurFade>
-									</div>
-		
+								<div className="subtitle homepage-subtitle">
+									<BlurFade delay={0.25 * 2} inView>
+										{INFO.homepage.description}
+									</BlurFade>
+								</div>
 							</div>
 
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-									<BlurFade delay={0.25} inView><img
-											src="./homepage.jpg"
-											alt="about.jpg"
-											className="homepage-image"
-										/></BlurFade>
+										<BlurFade delay={0.25} inView>
+											<img
+												src="./homepage.jpg"
+												alt="about.jpg"
+												className="homepage-image"
+											/>
+										</BlurFade>
 									</div>
 								</div>
 							</div>
 						</div>
-						<BlurFade delay={0.25*3} inView>
-						<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.resume}
-								target="_blank"
-								rel="noreferrer"
-							>
-
-
-							</a>
-						</div>
+						<BlurFade delay={0.25 * 3} inView>
+							<div className="homepage-socials">
+								<a
+									href={INFO.socials.twitter}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faTwitter}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<a
+									href={INFO.socials.github}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faGithub}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<a
+									href={INFO.socials.instagram}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faInstagram}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<a
+									href={`mailto:${INFO.main.email}`}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faMailBulk}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<a
+									href={INFO.resume}
+									target="_blank"
+									rel="noreferrer"
+									className="resume-button"
+								>
+									Resume
+								</a>
+							</div>
 						</BlurFade>
-						<BlurFade delay={0.25*4} inView>
-						<div className="homepage-projects">
-							<AllProjects />
-						</div>
+						<BlurFade delay={0.25 * 4} inView>
+							<div className="homepage-projects">
+								<AllProjects />
+							</div>
 						</BlurFade>
-		<BlurFade delay={0.25} inView>
-						<div className="page-footer">
-							<Footer />
-						</div>
+						<BlurFade delay={0.25} inView>
+							<div className="page-footer">
+								<Footer />
+							</div>
 						</BlurFade>
 					</div>
 				</div>

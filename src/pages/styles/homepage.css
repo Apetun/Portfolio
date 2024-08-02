@@ -44,7 +44,6 @@
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
-	transform: rotate(3deg);
 }
 
 .homepage-image-wrapper img {
@@ -149,21 +148,25 @@
 	}
 }
 
-
 .resume-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #333; /* Text color */
-	border: 1px solid #ccc; /* Border color */
-	border-radius: 50px; /* Oval shape */
-	padding: 1px 20px; /* Padding inside the button */
-	text-decoration: none; /* Remove underline */
-	font-size: 23px; /* Font size */
+	display: inline-block;
+	padding: 5px 20px;
+	background-color: var(--secondary-color); /* Blue color */
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background-color 0.3s, transform 0.3s;
   }
   
-  .resume-text {
-	font-family: "Roboto";
-	margin-right: 10px; 
+  .resume-button:hover {
+	background-color: var(--link-color); /* Darker blue */
+	transform: scale(1.05);
+  }
+  
+  .resume-button:active {
+	background-color: #139788; /* Even darker blue */
   }
   
