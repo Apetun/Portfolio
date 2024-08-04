@@ -4,9 +4,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="refresh" content="0; url=/portfolio/" />
     <script type="text/javascript">
-        if (window.location.pathname !== "/portfolio/") {
-            window.location.href = "/portfolio/";
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+                if (window.location.pathname !== "/portfolio/") {
+                    window.location.href = "/portfolio/";
+                }
+            }
+        });
     </script>
 </head>
 <body>
