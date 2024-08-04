@@ -7,6 +7,7 @@ import {
 	faTwitter,
 	faGithub,
 	faInstagram,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -116,6 +117,16 @@ const Homepage = () => {
 						</div>
 						<BlurFade delay={0.25 * 3} inView>
 							<div className="homepage-socials">
+								<a
+									href={INFO.socials.linkedin}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faLinkedin}
+										className="homepage-social-icon"
+									/>
+								</a>
 								<a
 									href={INFO.socials.twitter}
 									target="_blank"
