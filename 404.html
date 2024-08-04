@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/portfolio/" />
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.pathname !== "/portfolio/") {
-                window.location.href = "/portfolio/";
+            const path = window.location.pathname;
+            if (!path.startsWith('/portfolio/')) {
+                window.location.href = '/portfolio/';
             }
         });
     </script>
