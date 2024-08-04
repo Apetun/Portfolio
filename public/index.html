@@ -8,8 +8,9 @@
     <title>Portfolio</title>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.pathname !== '/portfolio' && !window.location.pathname.startsWith('/index.html')) {
-                window.location.pathname = '/portfolio';
+            const path = window.location.pathname;
+            if (!path.startsWith('/portfolio/')) {
+                window.location.pathname = '/portfolio/';
             }
         });
     </script>
