@@ -7,24 +7,11 @@
     <meta name="theme-color" content="#000000" />
     <title>Portfolio</title>
     <script>
-
-      window.addEventListener('load', () => {
-        const validPaths = [
-          '/',
-          '/portfolio/',
-          '/portfolio/about',
-          '/portfolio/projects',
-          '/portfolio/articles',
-          '/portfolio/article',
-          '/portfolio/contact',
-          '/portfolio/resume'
-        ];
-
-        const path = window.location.pathname;
-        if (!validPaths.includes(path)) {
-          window.location.pathname = '/portfolio/';
-        }
-      });
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.pathname !== '/portfolio' && !window.location.pathname.startsWith('/index.html')) {
+                window.location.pathname = '/portfolio';
+            }
+        });
     </script>
 </head>
 <body>
