@@ -6,34 +6,11 @@ function article_2() {
 		title: "Analyzing DarkComet in Memory with Volatility",
 		description:
 			"Volatility is used to analyze memory dumps for detecting and understanding the behavior of the DarkComet RAT. ",
-		keywords: [
-			"Volatility",
-			"DarkComet",
-			"Virus",
-			"Memory Forensics",
-		],
-		style: `
-				.article-content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-				}
-
-				.randImage {
-					align-self: center;
-					outline: 2px solid red;
-				}
-				`,
+		keywords: ["Volatility", "DarkComet", "Virus", "Memory Forensics"],
+		style: ``,
 		body: (
 			<React.Fragment>
-				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
-				</div>
+				<div className="article-content"></div>
 			</React.Fragment>
 		),
 	};
@@ -55,7 +32,32 @@ function article_1() {
 		],
 		body: (
 			<React.Fragment>
-				<h1>Content of article 2</h1>
+				<div className="article-content">
+					I had an incredible experience attending the ACM Summer
+					School on "GenAI for Text" at IIT Gandhinagar, sponsored by
+					Microsoft Research India. The event lasted 12 days and
+					featured an impressive lineup of speakers from academia and
+					industry, all specializing in Generative AI. We covered a
+					wide range of topics, from the basics to advanced NLP and
+					generative AI concepts.<br></br> During the internal
+					hackathon, I put my newfound knowledge to the test by
+					creating a tool called Query. This Gemini-backed tool was
+					designed to parse and query tabular data from PDF files of
+					the electoral bonds dataset. It was a challenging yet
+					rewarding project, and you can check out a simple demo{" "}
+					<a href="https://www.youtube.com/watch?v=2UeUEs9csPg">
+						here
+					</a>
+					.<br></br> The beautiful IIT Gandhinagar campus and the
+					fantastic peer group made the experience even more
+					memorable. I am grateful to the organizers at Lingo Labs for
+					their well-organized event. For a more official account,
+					feel free to visit my LinkedIn post{" "}
+					<a href="https://www.linkedin.com/posts/jeffinjoffy_i-am-delighted-to-share-my-experience-attending-activity-7216108016725606400-1ZIB?utm_source=share&utm_medium=member_desktop">
+						here
+					</a>
+					.
+				</div>
 			</React.Fragment>
 		),
 	};

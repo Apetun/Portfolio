@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from 'react-router-dom';
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -167,14 +168,12 @@ const Homepage = () => {
 										className="homepage-social-icon"
 									/>
 								</a>
-								<a
-									href={INFO.resume}
-									target="_blank"
-									rel="noreferrer"
+								<Link
+									to="/portfolio/resume"
 									className="resume-button"
 								>
 									Resume
-								</a>
+								</Link>
 							</div>
 						</BlurFade>
 						<BlurFade delay={0.25 * 4} inView>

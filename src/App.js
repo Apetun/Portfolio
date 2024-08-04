@@ -9,6 +9,7 @@ import Articles from "./pages/articles";
 import ReadArticle from "./pages/readArticle";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
+import Resume from "./pages/resume";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
@@ -32,6 +33,7 @@ function App() {
 				<Route path="/portfolio/articles" element={<Articles />} />
 				<Route path="/portfolio/article/:slug" element={<ReadArticle />} />
 				<Route path="/portfolio/contact" element={<Contact />} />
+				<Route path="/portfolio/resume" element={<Resume />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
