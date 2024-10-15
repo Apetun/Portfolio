@@ -62,7 +62,7 @@ const Contact = () => {
 									{"linkedin"}
 								</a>
 								. Thanks again for your interest, and I look
-								forward to hearing from you!
+								forward to hearing from you.
 							</div>
 						</BlurFade>
 					</div>
