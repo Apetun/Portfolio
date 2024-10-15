@@ -42,7 +42,7 @@ const Contact = () => {
 						</BlurFade>
 						<BlurFade duration={0.25*2} inView>
 							<div className="subtitle contact-subtitle">
-								Thank you for your interest in getting in touch
+								for your interest in getting in touch
 								with me. I welcome your feedback, questions, and
 								suggestions. If you have a specific question or
 								comment, please feel free to email me directly
@@ -62,7 +62,7 @@ const Contact = () => {
 									{"linkedin"}
 								</a>
 								. Thanks again for your interest, and I look
-								forward to hearing from you.
+								forward to hearing from you!
 							</div>
 						</BlurFade>
 					</div>
