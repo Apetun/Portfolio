@@ -76,6 +76,14 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://github.com/Apetun/Leaf-disease-segmentation-using-Unet",
 		},
+		{
+			title: "AI-sle",
+			description:
+				"An AI powered Pantry Tracker app built using Next.js, Firebase and Openrouter.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://ai-sle.vercel.app/",
+		},
 	],
 };
 
