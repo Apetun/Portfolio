@@ -37,7 +37,7 @@ const INFO = {
 			title: "Java face identification",
 			description:
 				"Face identification using OpenCV using an SQL database in Java",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
 			linkText: "View Project",
 			link: "https://github.com/Apetun/Java-Speech-And-Facial-Recognition",
 		},
@@ -45,8 +45,8 @@ const INFO = {
 		{
 			title: "Query",
 			description:
-				"A Gemini Backed AI pdf RAG tool for the Electoral Bonds DataSet",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"A Gemini Backed AI pdf RAG tool for the Electoral Bonds Dataset",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
 			linkText: "View Project",
 			link: "https://github.com/Apetun/IITGN-Hackathon",
 		},
@@ -54,7 +54,7 @@ const INFO = {
 		{
 			title: "Java speech Recognition",
 			description: "Speech Recognition using Sphinx4 in Java",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
 			linkText: "View Project",
 			link: "https://github.com/Apetun/Java-Speech-And-Facial-Recognition",
 		},
@@ -63,35 +63,44 @@ const INFO = {
 			title: "Personalized Meal Planner",
 			description:
 				"A personalized meal planner with a database in oracledb and database connectivity and UI done using python.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
 			linkText: "View Project",
 			link: "https://github.com/Apetun/Personalized-Meal-Planner",
 		},
-
-		{
-			title: "Leaf disease segmentation using Unet",
+{
+			title: "Crime Analysis using Big Data",
 			description:
-				"A model which can perform image segmentation and create a mask for leaf disease any given image.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"Chicago Crime Analysis using Big Data tools like Hadoop, Spark, and Kafka.",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg",
 			linkText: "View Project",
-			link: "https://github.com/Apetun/Leaf-disease-segmentation-using-Unet",
+			link: "npm run deployhttps://github.com/Apetun/Chicago-Crime-Analysis",
 		},
+		
 		{
 			title: "AI-sle",
 			description:
 				"An AI powered Pantry Tracker app built using Next.js, Firebase and Openrouter.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
 			linkText: "View Project",
 			link: "https://ai-sle.vercel.app/",
 		},
 		{
-			title: "OCSR for Handdrawn images",
+			title: "OCSR for Hand-drawn images",
 			description:
-				"An Optical Chemical Structure Recognition system using first principles Computer Vision in OpenCV for extracting molecular structures from hand-drawn images.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"An Optical Chemical Structure Recognition system with first principles of Computer Vision using OpenCV for extracting molecular structures from hand-drawn images.",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
 			linkText: "View Project",
 			link: "https://github.com/Apetun/Optical-Chemical-Structure-Recognition",
 		},
+		{
+			title: "Leaf disease segmentation using Unet",
+			description:
+				"A model which can perform image segmentation and create a mask for leaf disease any given image.",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
+			linkText: "View Project",
+			link: "https://github.com/Apetun/Leaf-disease-segmentation-using-Unet",
+		},
+		
 	],
 };
 
