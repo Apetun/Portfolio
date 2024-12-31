@@ -84,6 +84,14 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://ai-sle.vercel.app/",
 		},
+		{
+			title: "OCSR for Handdrawn images",
+			description:
+				"An Optical Chemical Structure Recognition system using first principles Computer Vision in OpenCV for extracting molecular structures from hand-drawn images.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			link: "https://github.com/Apetun/Optical-Chemical-Structure-Recognition",
+		},
 	],
 };
 
